@@ -19,6 +19,8 @@ if(!defined("IN_MYBB"))
 }
 
 $plugins->add_hook("newthread_do_multiattachments_start","MultiAttachments_upload");
+$plugins->add_hook("newreply_do_multiattachments_start","MultiAttachments_upload");
+$plugins->add_hook("editpost_do_multiattachments_start","MultiAttachments_upload");
 
 function MultiAttachments_info()
 {

@@ -250,7 +250,7 @@ if($mybb->settings['enableattachments'] == 1 && !$mybb->get_input('attachmentaid
 			
 			// add multi-attachments
 
-				$plugins->run_hooks("newthread_do_multiattachments_start");				
+				$plugins->run_hooks("newreply_do_multiattachments_start");				
 		}
 	}
 
